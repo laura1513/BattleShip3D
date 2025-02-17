@@ -14,7 +14,6 @@ public class TileScript : MonoBehaviour
     // componentes RGBA de 8 bits (valores entre 0 y 255).
     Color32[] hitColor = new Color32[2];
 
-
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
