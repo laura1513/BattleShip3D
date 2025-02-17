@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class EnemyIAScript : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class EnemyIAScript : MonoBehaviour
                 for (int i = 0; i < tileNumArray.Length; i++)
                 {
                     //check that ship end will not go off board and check if tile is taken
-                    if ((shipNose - (minusAmount * i) < 0 || gridNumbers[shipNose - i * minusAmount]) < 0)
+                    if ((shipNose - (minusAmount * i) < 0) || (gridNumbers[shipNose - i * minusAmount]) < 0)
                     {
                         taken = true;
                         break;
@@ -51,7 +52,8 @@ public class EnemyIAScript : MonoBehaviour
                 }
             }
         }
-        return enemyShips;
+
+            return enemyShips;
     }
 
 }

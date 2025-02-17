@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private bool playerTurn = true;
     private int shipIndex = 0;
     private ShipScript shipScript;
+    public EnemyIAScript enemyIAScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
         {
             setupComplete = true;
             nextBtn.gameObject.SetActive(false);
+            enemyIAScript.PlaceEnemyShips();
         }
     }
 
