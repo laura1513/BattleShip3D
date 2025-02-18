@@ -67,4 +67,5 @@ public class GameManager : MonoBehaviour
         Vector3 newVec = shipScript.GetOffsetVec(tile.transform.position);
         ships[shipIndex].transform.localPosition = newVec;
     }
+
 }

@@ -36,11 +36,11 @@ public class TileScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Missile")
+        if (collision.gameObject.tag == "Bomb")
         {
             missileHit = true;
         }
-        else if (collision.gameObject.tag == "EnemyMissile")
+        else if (collision.gameObject.tag == "EnemyBomb")
         {
             hitColor[0] = new Color32(38, 57, 76, 2);
             GetComponent<Renderer>().material.color = hitColor[0];
