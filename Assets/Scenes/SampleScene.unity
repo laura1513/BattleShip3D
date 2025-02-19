@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -335,6 +339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -403,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48116622}
   - component: {fileID: 48116624}
-  - component: {fileID: 48116623}
+  - component: {fileID: 48116625}
   m_Layer: 5
   m_Name: ShipsNumber1
   m_TagString: Untagged
@@ -419,7 +427,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48116621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -12}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -427,98 +435,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -681.00024, y: -176.99994}
-  m_SizeDelta: {x: 130.39001, y: 48.37}
+  m_AnchoredPosition: {x: -460, y: -237}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &48116623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48116621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 5
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278584997
-  m_fontColor: {r: 0.64779866, g: 0.022408055, b: 0.022408055, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 84.20136, w: -31.63461}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &48116624
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -527,6 +446,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48116621}
   m_CullTransparentMesh: 1
+--- !u!114 &48116625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48116621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.06477179, g: 0.8238993, b: 0.06948187, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 85
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 5
 --- !u!1001 &55082643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,6 +491,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -609,6 +566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -678,6 +639,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -749,6 +714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -818,6 +787,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -889,6 +862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -959,6 +936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -1025,6 +1006,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2829677469651884491, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
+      propertyPath: shipSize
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1873073648213521876, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
       propertyPath: m_Size.x
       value: 10.712458
@@ -1116,7 +1101,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3902202361214989548, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1778203925}
   m_SourcePrefab: {fileID: 100100000, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
 --- !u!1001 &222449969
 PrefabInstance:
@@ -1129,6 +1117,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1200,6 +1192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -1269,6 +1265,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1340,6 +1340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -1409,6 +1413,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1480,6 +1488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -1538,140 +1550,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
   m_PrefabInstance: {fileID: 397492488}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &397810603
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 397810604}
-  - component: {fileID: 397810606}
-  - component: {fileID: 397810605}
-  m_Layer: 5
-  m_Name: ShipsNumber2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &397810604
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397810603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -34}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1839008581}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -671.0001, y: -383.99988}
-  m_SizeDelta: {x: 130.39001, y: 48.37}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &397810605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397810603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 5
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278584997
-  m_fontColor: {r: 0.64779866, g: 0.022408055, b: 0.022408055, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 91.07459, w: -35.052628}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &397810606
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397810603}
-  m_CullTransparentMesh: 1
 --- !u!1 &406870112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,6 +1709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -1900,6 +1782,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1971,6 +1857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -2040,6 +1930,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -2111,6 +2005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -2181,6 +2079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -2250,6 +2152,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -2328,7 +2234,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xOffset: 0
   zOffset: 5
-  shipSize: 0
+  shipSize: 4
+--- !u!23 &486465098
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486465090}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &497820144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2340,6 +2288,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -2410,6 +2362,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -2506,12 +2462,12 @@ MonoBehaviour:
   - {fileID: 945446661}
   nextBtn: {fileID: 592346294}
   topText: {fileID: 1812224607}
-  playerShipText: {fileID: 0}
-  enemyShipText: {fileID: 0}
+  playerShipText: {fileID: 48116625}
+  enemyShipText: {fileID: 863401353}
   missilePrefab: {fileID: 434759423491039371, guid: 858823b126895bd48b691f70e6f2d6bc, type: 3}
   enemyMissilePrefab: {fileID: 1089542326795025627, guid: 13ed61875f6833e4ea4865ed2e797523, type: 3}
   puerto: {fileID: 1458530991}
-  firePrefab: {fileID: 0}
+  firePrefab: {fileID: 3279921436806093977, guid: d6930896cc1cbc840bd3bd6ae89b4a6f, type: 3}
   enemyIAScript: {fileID: 1597607597}
 --- !u!4 &522426059
 Transform:
@@ -2539,6 +2495,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -2610,6 +2570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -2679,6 +2643,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -2750,6 +2718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -2820,6 +2792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -2889,6 +2865,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -3081,6 +3061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -3151,6 +3135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -3220,6 +3208,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -3385,6 +3377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -3454,6 +3450,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -3742,6 +3742,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 585113100493598931, guid: dee39b8f065833f4fa35d177f1440da8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 486465094}
+    - targetCorrespondingSourceObject: {fileID: 585113100493598931, guid: dee39b8f065833f4fa35d177f1440da8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 486465098}
   m_SourcePrefab: {fileID: 100100000, guid: dee39b8f065833f4fa35d177f1440da8, type: 3}
 --- !u!1 &789321464
 GameObject:
@@ -3860,6 +3863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -3929,6 +3936,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4000,6 +4011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -4070,6 +4085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -4128,6 +4147,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
   m_PrefabInstance: {fileID: 861194636}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &863401351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 863401352}
+  - component: {fileID: 863401354}
+  - component: {fileID: 863401353}
+  m_Layer: 5
+  m_Name: ShipsNumber2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &863401352
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863401351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1839008581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -460, y: -335}
+  m_SizeDelta: {x: 200, y: 100}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &863401353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863401351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.06477179, g: 0.8238993, b: 0.06948187, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 85
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 5
+--- !u!222 &863401354
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863401351}
+  m_CullTransparentMesh: 1
 --- !u!1001 &863459468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4136,6 +4234,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2829677469651884491, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
+      propertyPath: shipSize
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1873073648213521876, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
       propertyPath: m_Size.x
       value: 10.744657
@@ -4227,7 +4329,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3902202361214989548, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2096598570}
   m_SourcePrefab: {fileID: 100100000, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
 --- !u!1001 &867980194
 PrefabInstance:
@@ -4240,6 +4345,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4311,6 +4420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -4380,6 +4493,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4451,6 +4568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -4520,6 +4641,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4591,6 +4716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -4654,6 +4783,48 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2175582197927720520, guid: fa1ee6283c0235f469eb5d32767064ca, type: 3}
   m_PrefabInstance: {fileID: 1441301056}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &945446666
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945446661}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &945784474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4665,6 +4836,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4735,6 +4910,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4898,6 +5077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -4967,6 +5150,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -5038,6 +5225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -5107,6 +5298,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -5178,6 +5373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -5247,6 +5446,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -5318,6 +5521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -5376,140 +5583,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
   m_PrefabInstance: {fileID: 1108260206}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1131562543
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1131562544}
-  - component: {fileID: 1131562546}
-  - component: {fileID: 1131562545}
-  m_Layer: 5
-  m_Name: ShipsText2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1131562544
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131562543}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -32}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1839008581}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -824, y: -368}
-  m_SizeDelta: {x: 130, y: 48}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1131562545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131562543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Ships player 2
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -74.13338}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1131562546
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131562543}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1183504786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5521,6 +5594,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -5592,6 +5669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -5661,6 +5742,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -5732,6 +5817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -5801,6 +5890,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (90)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -6005,6 +6098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -6074,6 +6171,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -6145,6 +6246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -6214,6 +6319,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -6285,6 +6394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -6354,6 +6467,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -6509,6 +6626,10 @@ PrefabInstance:
       propertyPath: zOffset
       value: 6.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4345389213420983074, guid: fa1ee6283c0235f469eb5d32767064ca, type: 3}
+      propertyPath: shipSize
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9042909197280033732, guid: fa1ee6283c0235f469eb5d32767064ca, type: 3}
       propertyPath: m_IsKinematic
       value: 0
@@ -6516,7 +6637,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2175582197927720520, guid: fa1ee6283c0235f469eb5d32767064ca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 945446666}
   m_SourcePrefab: {fileID: 100100000, guid: fa1ee6283c0235f469eb5d32767064ca, type: 3}
 --- !u!1001 &1458530990
 PrefabInstance:
@@ -6596,6 +6720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -6665,6 +6793,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -6736,6 +6868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -6806,6 +6942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -6874,7 +7014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530221463}
   - component: {fileID: 1530221465}
-  - component: {fileID: 1530221464}
+  - component: {fileID: 1530221466}
   m_Layer: 5
   m_Name: ShipsText1
   m_TagString: Untagged
@@ -6890,7 +7030,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530221462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6898,10 +7038,18 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -829, y: -161}
-  m_SizeDelta: {x: 130, y: 48}
+  m_AnchoredPosition: {x: -658, y: -237}
+  m_SizeDelta: {x: 400, y: 70}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1530221464
+--- !u!222 &1530221465
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530221462}
+  m_CullTransparentMesh: 1
+--- !u!114 &1530221466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6910,7 +7058,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1530221462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -6921,83 +7069,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ships player 1
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -73.24044}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1530221465
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530221462}
-  m_CullTransparentMesh: 1
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
+    m_FontSize: 46
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 152
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ships Player 1
 --- !u!1001 &1546034437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7009,6 +7094,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -7080,6 +7169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -7138,6 +7231,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
   m_PrefabInstance: {fileID: 1546500451}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1556469069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556469070}
+  - component: {fileID: 1556469072}
+  - component: {fileID: 1556469071}
+  m_Layer: 5
+  m_Name: ShipsText2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1556469070
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556469069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1839008581}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -658, y: -335}
+  m_SizeDelta: {x: 400, y: 70}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1556469071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556469069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
+    m_FontSize: 46
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 152
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ships Player 2
+--- !u!222 &1556469072
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556469069}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1565067667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7149,6 +7321,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -7219,6 +7395,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -7322,7 +7502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a35e75881a59e43a4a778a00b1e0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyBombPrefab: {fileID: 0}
+  enemyBombPrefab: {fileID: 1089542326795025627, guid: 13ed61875f6833e4ea4865ed2e797523, type: 3}
 --- !u!1001 &1599123060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7334,6 +7514,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -7405,6 +7589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -7474,6 +7662,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -7545,6 +7737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -7614,6 +7810,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -7685,6 +7885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -7754,6 +7958,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -7825,6 +8033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -7895,6 +8107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -7958,6 +8174,48 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3902202361214989548, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
   m_PrefabInstance: {fileID: 215502162}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1778203925
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778203920}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &1788124678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7969,6 +8227,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -8119,6 +8381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -8188,6 +8454,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -8346,8 +8616,8 @@ RectTransform:
   - {fileID: 592346293}
   - {fileID: 1530221463}
   - {fileID: 48116622}
-  - {fileID: 1131562544}
-  - {fileID: 397810604}
+  - {fileID: 1556469070}
+  - {fileID: 863401352}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8366,6 +8636,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -8437,6 +8711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -8506,6 +8784,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -8577,6 +8859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -8646,6 +8932,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -8724,7 +9014,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xOffset: 0
   zOffset: 0
-  shipSize: 0
+  shipSize: 5
+--- !u!23 &1947531503
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947531495}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &1990060278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8736,6 +9068,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -8807,6 +9143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -8876,6 +9216,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -9034,6 +9378,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7941188170638473406, guid: a8441fd1d79faf045bdf64538f436dfe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1947531499}
+    - targetCorrespondingSourceObject: {fileID: 7941188170638473406, guid: a8441fd1d79faf045bdf64538f436dfe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1947531503}
   m_SourcePrefab: {fileID: 100100000, guid: a8441fd1d79faf045bdf64538f436dfe, type: 3}
 --- !u!1001 &2044770414
 PrefabInstance:
@@ -9046,6 +9393,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -9117,6 +9468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -9187,6 +9542,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -9250,6 +9609,48 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3902202361214989548, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
   m_PrefabInstance: {fileID: 863459468}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &2096598570
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096598565}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &2124365384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9261,6 +9662,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -9332,6 +9737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -9402,6 +9811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterCell (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -9471,6 +9884,10 @@ PrefabInstance:
     - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_Name
       value: WaterCell (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846803181313361253, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
+      propertyPath: m_TagString
+      value: Tile
       objectReference: {fileID: 0}
     - target: {fileID: 7939112881178439522, guid: 04eb1eea6c479f24ab8afc267f6a02d6, type: 3}
       propertyPath: m_LocalScale.y
