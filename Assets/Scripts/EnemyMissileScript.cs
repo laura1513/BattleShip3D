@@ -20,11 +20,16 @@ public class EnemyMissileScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ship"))
         {
-            //gameManager.EnemyHitPlayer(targetTileLocation, targetTile, collision.gameObject);
+            gameManager.EnemyHitPlayer(targetTileLocation, targetTile, collision.gameObject);
         }
         else
         {
 
         }
+        Destroy(gameObject);
+    }
+    public void SetTarget(int target)
+    {
+        targetTile = target;
     }
 }

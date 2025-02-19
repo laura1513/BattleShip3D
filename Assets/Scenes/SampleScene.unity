@@ -2328,6 +2328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xOffset: 0
   zOffset: 5
+  shipSize: 0
 --- !u!1001 &497820144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2505,9 +2506,12 @@ MonoBehaviour:
   - {fileID: 945446661}
   nextBtn: {fileID: 592346294}
   topText: {fileID: 1812224607}
+  playerShipText: {fileID: 0}
+  enemyShipText: {fileID: 0}
   missilePrefab: {fileID: 434759423491039371, guid: 858823b126895bd48b691f70e6f2d6bc, type: 3}
   enemyMissilePrefab: {fileID: 1089542326795025627, guid: 13ed61875f6833e4ea4865ed2e797523, type: 3}
-  woodDeck: {fileID: 1458530991}
+  puerto: {fileID: 1458530991}
+  firePrefab: {fileID: 0}
   enemyIAScript: {fileID: 1597607597}
 --- !u!4 &522426059
 Transform:
@@ -7285,7 +7289,7 @@ GameObject:
   - component: {fileID: 1597607596}
   - component: {fileID: 1597607597}
   m_Layer: 0
-  m_Name: EnemyIA
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7318,6 +7322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a35e75881a59e43a4a778a00b1e0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyBombPrefab: {fileID: 0}
 --- !u!1001 &1599123060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8719,6 +8724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xOffset: 0
   zOffset: 0
+  shipSize: 0
 --- !u!1001 &1990060278
 PrefabInstance:
   m_ObjectHideFlags: 0

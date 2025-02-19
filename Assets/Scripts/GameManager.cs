@@ -41,18 +41,33 @@ public class GameManager : MonoBehaviour
         nextBtn.onClick.AddListener(() => NextShipClicked());
         enemyShips = enemyIAScript.PlaceEnemyShips();
     }
+    //Boton para cambiar de barco
     private void NextShipClicked()
     {
-        if (shipIndex < ships.Length - 1)
+        if (!shipScript.OnGameBoard())
         {
-            shipIndex++;
-            shipScript = ships[shipIndex].GetComponent<ShipScript>();
+            shipScript.FlashColor(Color.yellow);
         }
         else
         {
-            setupComplete = true;
-            nextBtn.gameObject.SetActive(false);
-            enemyIAScript.PlaceEnemyShips();
+            if(shipIndex <= ships.Length - 2)
+            {
+                shipIndex++;
+                shipScript = ships[shipIndex].GetComponent<ShipScript>();
+            } else
+            {
+                //Si ya se han colocado todos los barcos se desactivan el boton y el puerto
+                nextBtn.gameObject.SetActive(false);
+                puerto.SetActive(false);
+                //Se cambia el texto de la parte superior
+                topText.text = "Haz click en una casilla para lanzar un misil";
+                //Se cambia el turno
+                setupComplete = true;
+                for (int i = 0; i < ships.Length; i++)
+                {
+                    ships[i].SetActive(false);
+                }
+            } 
         }
     }
 
@@ -66,6 +81,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //Funcion para cuando se hace click en una casilla
     public void TileClicked(GameObject tile)
     {
         if (setupComplete && playerTurn)
@@ -79,6 +95,7 @@ public class GameManager : MonoBehaviour
             shipScript.SetClickedTile(tile);
         }
     }
+    //Funcion para colocar un barco
     private void PlaceShip(GameObject tile)
     {
         // se coloca un barco en la casilla
@@ -87,7 +104,7 @@ public class GameManager : MonoBehaviour
         Vector3 newVec = shipScript.GetOffsetVec(tile.transform.position);
         ships[shipIndex].transform.localPosition = newVec;
     }
-
+    //Funcion para lanzar un misil
     public void CheckHit(GameObject tile)
     {
         int tileNum = Int32.Parse(Regex.Match(tile.name, @"\d+").Value);
@@ -128,17 +145,17 @@ public class GameManager : MonoBehaviour
             topText.text = "Agua";
         }
     }
-
+    //Funcion para cuando un misil enemigo impacta en un barco del jugador
     public void EnemyHitPlayer(Vector3 tile, int tileNum, GameObject hitObj)
     {
-        enemyIAScript.missileHit(tileNum);
+        enemyIAScript.MissileHit(tileNum);
         tile.y += 0.2f;
         playerFires.Add(Instantiate(firePrefab, tile, Quaternion.identity));
         if (hitObj.GetComponent<ShipScript>().ComprobarHundido())
         {
             playerShipCount--;
             playerShipText.text = playerShipCount.ToString();
-            enemyIAScript.HundirJugador();
+            enemyIAScript.JugadorHundido();
         }
     }
 }
