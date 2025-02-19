@@ -5,6 +5,15 @@ using System.Linq;
 
 public class EnemyIAScript : MonoBehaviour
 {
+    char[] guessGrid;
+    List<int> potentialHits;
+    List<int> currentHits;
+    private void Start()
+    {
+        potentialHits = new List<int>();
+        currentHits = new List<int>();
+        guessGrid = Enumerable.Repeat('o', 100).ToArray();
+    }
     public List<int[]> PlaceEnemyShips()
     {
         List<int[]> enemyShips = new List<int[]>

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyBomb
   - Bomb
+  - Ship
   layers:
   - Default
   - TransparentFX
