@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [Header("HUD")]
     public Button nextBtn;
     public Text topText;
+    public Text barcoOut;
     public Text playerShipText;
     public Text enemyShipText;
 
@@ -40,35 +41,37 @@ public class GameManager : MonoBehaviour
         shipScript = ships[shipIndex].GetComponent<ShipScript>();
         nextBtn.onClick.AddListener(() => NextShipClicked());
         enemyShips = enemyIAScript.PlaceEnemyShips();
+        barcoOut.gameObject.SetActive(false);
     }
     //Boton para cambiar de barco
     private void NextShipClicked()
     {
         if (!shipScript.OnGameBoard())
         {
-            shipScript.FlashColor(Color.yellow);
+            barcoOut.gameObject.SetActive(true);
         }
         else
         {
-            if(shipIndex <= ships.Length - 2)
+            if (shipIndex <= ships.Length - 2)
             {
                 shipIndex++;
+                Debug.Log("Ship Index " + shipIndex);
+                Debug.Log("Ship Length " + (ships.Length - 2));
                 shipScript = ships[shipIndex].GetComponent<ShipScript>();
-            } else
+                barcoOut.gameObject.SetActive(false);
+            }
+            else
             {
-                //Si ya se han colocado todos los barcos se desactivan el boton y el puerto
+                Debug.Log("Barcos colocados");
                 nextBtn.gameObject.SetActive(false);
                 puerto.SetActive(false);
-                //Se cambia el texto de la parte superior
-                topText.text = "Haz click en una casilla para lanzar un misil";
-                //Se cambia el turno
+                barcoOut.gameObject.SetActive(false);
+                topText.text = "Lanza la bomba";
                 setupComplete = true;
-                for (int i = 0; i < ships.Length; i++)
-                {
-                    ships[i].SetActive(false);
-                }
-            } 
+                for (int i = 0; i < ships.Length; i++) ships[i].SetActive(false);
+            }
         }
+
     }
 
     // Update is called once per frame
@@ -87,6 +90,10 @@ public class GameManager : MonoBehaviour
         if (setupComplete && playerTurn)
         {
             // se lanza un misil
+            Vector3 tilePos = tile.transform.position;
+            tilePos.y += 200;
+            playerTurn = false;
+            Instantiate(missilePrefab, tilePos, missilePrefab.transform.rotation);
         }
         else if (!setupComplete)
         {
@@ -142,6 +149,7 @@ public class GameManager : MonoBehaviour
         }
         if(hitCount == 0)
         {
+            Debug.Log("Agua");
             topText.text = "Agua";
         }
     }

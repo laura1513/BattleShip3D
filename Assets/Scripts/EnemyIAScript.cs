@@ -133,7 +133,7 @@ public class EnemyIAScript : MonoBehaviour
             guess = nextIndex;
         }
         //Busca la casilla en el tablero
-        GameObject tile = GameObject.Find("Tile (" + (guess + 1) + ")");
+        GameObject tile = GameObject.Find("WaterCell (" + (guess + 1) + ")");
         Vector3 vec = tile.transform.position;
         vec.y += 15;
         //Crea la bomba en la casilla

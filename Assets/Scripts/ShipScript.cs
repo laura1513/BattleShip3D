@@ -47,6 +47,10 @@ public class ShipScript : MonoBehaviour
     //Rotación del barco
     public void RotateShip()
     {
+        if(clickedTile == null)
+        {
+            return;
+        }
         touchTiles.Clear();
         transform.localEulerAngles += new Vector3(0, nextYrotation, 0);
         nextYrotation *= -1;
@@ -77,23 +81,5 @@ public class ShipScript : MonoBehaviour
     {
         hitCount++;
         return shipSize <= hitCount;
-    }
-
-    //Cambiar el color del barco
-    public void FlashColor(Color tempColor)
-    {
-        foreach (Material mat in allMaterials)
-        {
-            mat.color = tempColor;
-        }
-    }
-    //Restablecer el color del barco
-    private void ResetColor()
-    {
-        int i = 0;
-        foreach (Material mat in allMaterials)
-        {
-            mat.color = allColors[i++];
-        }
     }
 }
