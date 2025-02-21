@@ -5,14 +5,24 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Ships")]
     public GameObject[] ships;
+    public EnemyIAScript enemyIAScript;
+    public List<TileScript> allTileScript;
+    private ShipScript shipScript;
+    private List<int[]> enemyShips;
+    private int enemyShipCount = 5;
+    private int playerShipCount = 5;
+    private int shipIndex = 0;
 
     [Header("HUD")]
     public Button nextBtn;
+    public Button reanudarBtn;
     public Text topText;
     public Text barcoOut;
     public Text playerShipText;
@@ -26,20 +36,19 @@ public class GameManager : MonoBehaviour
 
     private bool setupComplete = false;
     private bool playerTurn = true;
-    private int shipIndex = 0;
-    private ShipScript shipScript;
-    public EnemyIAScript enemyIAScript;
 
-    private List<int[]> enemyShips;
-    private List<GameObject> playerFires;
+    [Header("GameObjects")]
+    private List<GameObject> playerFires = new List<GameObject>();
+    private List<GameObject> enemyFires = new List<GameObject>();
 
-    private int enemyShipCount = 5;
-    private int playerShipCount = 5;
+    private List<int> numeros = Enumerable.Range(0, 100).ToList();
+    
     // Start is called before the first frame update
     void Start()
     {
         shipScript = ships[shipIndex].GetComponent<ShipScript>();
         nextBtn.onClick.AddListener(() => NextShipClicked());
+        reanudarBtn.onClick.AddListener(() => Reanudar());
         enemyShips = enemyIAScript.PlaceEnemyShips();
         barcoOut.gameObject.SetActive(false);
     }
@@ -55,14 +64,11 @@ public class GameManager : MonoBehaviour
             if (shipIndex <= ships.Length - 2)
             {
                 shipIndex++;
-                Debug.Log("Ship Index " + shipIndex);
-                Debug.Log("Ship Length " + (ships.Length - 2));
                 shipScript = ships[shipIndex].GetComponent<ShipScript>();
                 barcoOut.gameObject.SetActive(false);
             }
             else
             {
-                Debug.Log("Barcos colocados");
                 nextBtn.gameObject.SetActive(false);
                 puerto.SetActive(false);
                 barcoOut.gameObject.SetActive(false);
@@ -114,8 +120,23 @@ public class GameManager : MonoBehaviour
     //Funcion para lanzar un misil
     public void CheckHit(GameObject tile)
     {
-        int tileNum = Int32.Parse(Regex.Match(tile.name, @"\d+").Value);
+        // Obtener el número del nombre del objeto
+        Match match = Regex.Match(tile.name, @"\d+");
+
+        if (!match.Success)
+        {
+            Debug.LogError($"Error: El nombre del tile '{tile.name}' no contiene un número válido.");
+            return;
+        }
+
+        if (!int.TryParse(match.Value, out int tileNum))
+        {
+            Debug.LogError($"Error: No se pudo convertir '{match.Value}' a un número entero.");
+            return;
+        }
+
         int hitCount = 0;
+
         foreach (int[] tileNumArray in enemyShips)
         {
             if (tileNumArray.Contains(tileNum))
@@ -124,8 +145,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (tileNumArray[i] == tileNum)
                     {
-
-                        tileNumArray[i] = -5;
+                        tileNumArray[i] = -5;  // Marcar como golpeado
                         hitCount++;
                     }
                     else if (tileNumArray[i] == -5)
@@ -133,26 +153,36 @@ public class GameManager : MonoBehaviour
                         hitCount++;
                     }
                 }
+
+                // Verificar si el barco está hundido
                 if (hitCount == tileNumArray.Length)
                 {
                     enemyShipCount--;
                     topText.text = "Hundido";
-
+                    enemyFires.Add(Instantiate(firePrefab, tile.transform.position, Quaternion.identity));
+                    tile.GetComponent<TileScript>().SetTileColor(1, new Color32(68, 0, 0, 225));
+                    tile.GetComponent<TileScript>().SwitchColors(1);
                 }
                 else
                 {
                     topText.text = "Tocado";
+                    tile.GetComponent<TileScript>().SetTileColor(1, new Color32(225, 0, 0, 225));
+                    tile.GetComponent<TileScript>().SwitchColors(1);
                 }
-                break;
+                //return; // Salir del método, ya que se encontró un impacto
             }
-            
         }
-        if(hitCount == 0)
+
+        // Si no hubo impactos
+        if (hitCount == 0)
         {
-            Debug.Log("Agua");
             topText.text = "Agua";
+            tile.GetComponent<TileScript>().SetTileColor(1, new Color32(255, 255, 0, 0));
+            tile.GetComponent<TileScript>().SwitchColors(1);
         }
+        Invoke("EndPlayerTurn", 1.5f);
     }
+
     //Funcion para cuando un misil enemigo impacta en un barco del jugador
     public void EnemyHitPlayer(Vector3 tile, int tileNum, GameObject hitObj)
     {
@@ -165,5 +195,73 @@ public class GameManager : MonoBehaviour
             playerShipText.text = playerShipCount.ToString();
             enemyIAScript.JugadorHundido();
         }
+        Invoke("EndEnemyTurn", 1.5f);
+    }
+
+    private void EndPlayerTurn()
+    {
+        for (int i = 0; i < ships.Length; i++)
+        {
+            ships[i].SetActive(true);
+        }
+        foreach (GameObject fire in playerFires)
+        {
+            fire.SetActive(true);
+        }
+        foreach (GameObject fire in enemyFires)
+        {
+            fire.SetActive(false);
+        }
+        enemyShipText.text = enemyShipCount.ToString();
+        topText.text = "Turno del enemigo";
+        enemyIAScript.NPCTurn();
+        CollorAllTiles(0);
+        if (playerShipCount < 1)
+        {
+            GameOver("GANASTE");
+        }
+    }
+
+    public void EndEnemyTurn()
+    {
+        for (int i = 0; i < ships.Length; i++)
+        {
+            ships[i].SetActive(false);
+        }
+        foreach (GameObject fire in playerFires)
+        {
+            fire.SetActive(false);
+        }
+        foreach (GameObject fire in enemyFires)
+        {
+            fire.SetActive(true);
+        }
+        playerShipText.text = playerShipCount.ToString();
+        topText.text = "Lanza el misil";
+        playerTurn = true;
+        CollorAllTiles(1);
+        if (enemyShipCount < 1)
+        {
+            GameOver("PERDISTE");
+        }
+    }
+
+    private void CollorAllTiles(int colorIndex)
+    {
+        foreach(TileScript tile in allTileScript)
+        {
+            tile.SwitchColors(colorIndex);
+        }
+
+    }
+    void GameOver(string message)
+    {
+        topText.text = message;
+        reanudarBtn.gameObject.SetActive(true);
+    }
+
+    void Reanudar()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

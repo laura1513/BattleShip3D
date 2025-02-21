@@ -24,7 +24,7 @@ public class EnemyMissileScript : MonoBehaviour
         }
         else
         {
-
+            enemyIAScript.PauseAndEnd(targetTile);
         }
         Destroy(gameObject);
     }

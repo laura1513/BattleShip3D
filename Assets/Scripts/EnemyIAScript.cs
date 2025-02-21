@@ -10,6 +10,7 @@ public class EnemyIAScript : MonoBehaviour
     List<int> currentHits;
     private int guess;
     public GameObject enemyBombPrefab;
+    public GameManager gameManager;
     private void Start()
     {
         potentialHits = new List<int>();
@@ -82,7 +83,7 @@ public class EnemyIAScript : MonoBehaviour
                 hitIndex.Add(i);
             }
         }
-        // Si hay más de un barco, buscar el siguiente tile
+        // Si hay más de un acierto, buscar el siguiente tile
         if (hitIndex.Count > 1)
         {
             int diff = hitIndex[1] - hitIndex[0];
@@ -144,6 +145,7 @@ public class EnemyIAScript : MonoBehaviour
     public void MissileHit(int hit)
     {
         guessGrid[guess] = 'h';
+        Invoke("EndTurn", 1.5f);
     }
 
     //Se ejecuta una vez que el jugador hunde un barco
@@ -157,5 +159,36 @@ public class EnemyIAScript : MonoBehaviour
                 guessGrid[i] = 'x';
             }
         }
+    }
+
+    private void EndTurn()
+    {
+        gameManager.GetComponent<GameManager>().EndEnemyTurn();
+    }
+
+    public void PauseAndEnd(int miss)
+    {
+        if (currentHits.Count > 0 && currentHits[0] > miss)
+        {
+            foreach(int potential in potentialHits)
+            {
+                //Si el potencial de los impactos es menor que el de los fallos, eliminarlo
+                if (currentHits[0] > miss)
+                {
+                    if (potential < miss)
+                    {
+                        potentialHits.Remove(potential);
+                    }
+                }
+                else
+                {
+                    if (potential > miss)
+                    {
+                        potentialHits.Remove(potential);
+                    }
+                }
+            }
+        }
+        Invoke("EndTurn", 1.5f);
     }
 }
