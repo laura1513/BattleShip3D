@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -110,6 +109,7 @@ public class EnemyIAScript : MonoBehaviour
             closeTiles.Add(10);
 
             int index = Random.Range(0, closeTiles.Count);
+            Debug.Log("Index: " + index);
             int possibleGuess = hitIndex[0] + closeTiles[index];
             //Verificar que el posible tiro no se salga del tablero
             bool onGrid = possibleGuess > -1 && possibleGuess < 100;
@@ -127,14 +127,16 @@ public class EnemyIAScript : MonoBehaviour
         else
         {
             int nextIndex = Random.Range(0, 100);
-            while (guessGrid[nextIndex] != 'o')
-            {
-                nextIndex = Random.Range(0, 100);
-            }
+            while (guessGrid[nextIndex] != 'o') nextIndex = Random.Range(0, 100);
+            nextIndex = GuessAgainCheck(nextIndex);
+            Debug.Log(" --- ");
+            nextIndex = GuessAgainCheck(nextIndex);
+            Debug.Log(" -########-- ");
             guess = nextIndex;
         }
         //Busca la casilla en el tablero
         GameObject tile = GameObject.Find("WaterCell (" + (guess + 1) + ")");
+        guessGrid[guess] = 'm';
         Vector3 vec = tile.transform.position;
         vec.y += 15;
         //Crea la bomba en la casilla
@@ -142,10 +144,35 @@ public class EnemyIAScript : MonoBehaviour
         missile.GetComponent<EnemyMissileScript>().SetTarget(guess);
         missile.GetComponent<EnemyMissileScript>().targetTileLocation = tile.transform.position;
     }
+    private int GuessAgainCheck(int nextIndex)
+    {
+        string str = "nx: " + nextIndex;
+        int newGuess = nextIndex;
+        bool edgeCase = nextIndex < 10 || nextIndex > 89 || nextIndex % 10 == 0 || nextIndex % 10 == 9;
+        bool nearGuess = false;
+        if (nextIndex + 1 < 100) {
+            nearGuess = guessGrid[nextIndex + 1] != 'o';
+        }
+        if (!nearGuess && nextIndex - 1 > 0){
+            nearGuess = guessGrid[nextIndex - 1] != 'o';
+        }
+        if (!nearGuess && nextIndex + 10 < 100) {
+            nearGuess = guessGrid[nextIndex + 10] != 'o';
+        }
+        if (!nearGuess && nextIndex - 10 > 0){
+            nearGuess = guessGrid[nextIndex - 10] != 'o';
+        }
+        if (edgeCase || nearGuess) {
+            newGuess = Random.Range(0, 100);
+        }
+        while (guessGrid[newGuess] != 'o') newGuess = Random.Range(0, 100);
+        Debug.Log(str + " newGuess: " + newGuess + " e:" + edgeCase + " g:" + nearGuess);
+        return newGuess;
+    }
     public void MissileHit(int hit)
     {
         guessGrid[guess] = 'h';
-        Invoke("EndTurn", 1.5f);
+        Invoke("EndTurn", 2f);
     }
 
     //Se ejecuta una vez que el jugador hunde un barco
@@ -189,6 +216,6 @@ public class EnemyIAScript : MonoBehaviour
                 }
             }
         }
-        Invoke("EndTurn", 1.5f);
+        Invoke("EndTurn", 2f);
     }
 }

@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -27,6 +26,8 @@ public class GameManager : MonoBehaviour
     public Text barcoOut;
     public Text playerShipText;
     public Text enemyShipText;
+    public GameObject panelGanar;
+    public GameObject panelPerder;
 
     [Header("Objects")]
     public GameObject missilePrefab;
@@ -51,6 +52,8 @@ public class GameManager : MonoBehaviour
         reanudarBtn.onClick.AddListener(() => Reanudar());
         enemyShips = enemyIAScript.PlaceEnemyShips();
         barcoOut.gameObject.SetActive(false);
+        panelGanar.SetActive(false);
+        panelPerder.SetActive(false);
     }
     //Boton para cambiar de barco
     private void NextShipClicked()
@@ -180,7 +183,7 @@ public class GameManager : MonoBehaviour
             tile.GetComponent<TileScript>().SetTileColor(1, new Color32(255, 255, 0, 0));
             tile.GetComponent<TileScript>().SwitchColors(1);
         }
-        Invoke("EndPlayerTurn", 1.5f);
+        Invoke("EndPlayerTurn", 2f);
     }
 
     //Funcion para cuando un misil enemigo impacta en un barco del jugador
@@ -195,7 +198,7 @@ public class GameManager : MonoBehaviour
             playerShipText.text = playerShipCount.ToString();
             enemyIAScript.JugadorHundido();
         }
-        Invoke("EndEnemyTurn", 1.5f);
+        Invoke("EndEnemyTurn", 2f);
     }
 
     private void EndPlayerTurn()
@@ -218,7 +221,8 @@ public class GameManager : MonoBehaviour
         CollorAllTiles(0);
         if (playerShipCount < 1)
         {
-            GameOver("GANASTE");
+
+            SceneManager.LoadScene("Perder");
         }
     }
 
@@ -242,7 +246,7 @@ public class GameManager : MonoBehaviour
         CollorAllTiles(1);
         if (enemyShipCount < 1)
         {
-            GameOver("PERDISTE");
+            SceneManager.LoadScene("Ganar");
         }
     }
 

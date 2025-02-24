@@ -1,11 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class HUDFunctions : MonoBehaviour
 {
     public void CerrarAplicacion()
     {
         Application.Quit();
+    }
+    public void Replay()
+    {
+        SceneManager.LoadScene("Juego");
     }
 }
