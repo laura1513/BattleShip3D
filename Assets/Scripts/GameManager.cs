@@ -169,6 +169,7 @@ public class GameManager : MonoBehaviour
                 else
                 {
                     topText.text = "Tocado";
+                    enemyFires.Add(Instantiate(firePrefab, tile.transform.position, Quaternion.identity));
                     tile.GetComponent<TileScript>().SetTileColor(1, new Color32(225, 0, 0, 225));
                     tile.GetComponent<TileScript>().SwitchColors(1);
                 }

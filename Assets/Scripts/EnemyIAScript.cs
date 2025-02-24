@@ -129,9 +129,7 @@ public class EnemyIAScript : MonoBehaviour
             int nextIndex = Random.Range(0, 100);
             while (guessGrid[nextIndex] != 'o') nextIndex = Random.Range(0, 100);
             nextIndex = GuessAgainCheck(nextIndex);
-            Debug.Log(" --- ");
             nextIndex = GuessAgainCheck(nextIndex);
-            Debug.Log(" -########-- ");
             guess = nextIndex;
         }
         //Busca la casilla en el tablero
@@ -166,7 +164,6 @@ public class EnemyIAScript : MonoBehaviour
             newGuess = Random.Range(0, 100);
         }
         while (guessGrid[newGuess] != 'o') newGuess = Random.Range(0, 100);
-        Debug.Log(str + " newGuess: " + newGuess + " e:" + edgeCase + " g:" + nearGuess);
         return newGuess;
     }
     public void MissileHit(int hit)
