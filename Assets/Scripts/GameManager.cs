@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [Header("HUD")]
     public Button nextBtn;
     public Button reanudarBtn;
+    public Button rotarBtn;
     public Text topText;
     public Text barcoOut;
     public Text playerShipText;
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         shipScript = ships[shipIndex].GetComponent<ShipScript>();
         nextBtn.onClick.AddListener(() => NextShipClicked());
         reanudarBtn.onClick.AddListener(() => Reanudar());
+        rotarBtn.onClick.AddListener(() => shipScript.RotateShip());
         enemyShips = enemyIAScript.PlaceEnemyShips();
         barcoOut.gameObject.SetActive(false);
         panelGanar.SetActive(false);
