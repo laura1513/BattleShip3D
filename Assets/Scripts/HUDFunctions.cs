@@ -11,4 +11,8 @@ public class HUDFunctions : MonoBehaviour
     {
         SceneManager.LoadScene("Juego");
     }
+    public void Inicio()
+    {
+        SceneManager.LoadScene("Inicio");
+    }
 }
