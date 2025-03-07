@@ -27,8 +27,6 @@ public class GameManager : MonoBehaviour
     public Text barcoOut;
     public Text playerShipText;
     public Text enemyShipText;
-    public GameObject panelGanar;
-    public GameObject panelPerder;
 
     [Header("Objects")]
     public GameObject missilePrefab;
@@ -54,8 +52,6 @@ public class GameManager : MonoBehaviour
         rotarBtn.onClick.AddListener(() => shipScript.RotateShip());
         enemyShips = enemyIAScript.PlaceEnemyShips();
         barcoOut.gameObject.SetActive(false);
-        panelGanar.SetActive(false);
-        panelPerder.SetActive(false);
     }
     //Boton para cambiar de barco
     private void NextShipClicked()
@@ -218,15 +214,16 @@ public class GameManager : MonoBehaviour
         {
             fire.SetActive(false);
         }
-        enemyShipText.text = enemyShipCount.ToString();
-        topText.text = "Turno del enemigo";
-        enemyIAScript.NPCTurn();
-        CollorAllTiles(0);
+        
         if (playerShipCount < 1)
         {
 
             SceneManager.LoadScene("Perder");
         }
+        enemyShipText.text = enemyShipCount.ToString();
+        topText.text = "Turno del enemigo";
+        enemyIAScript.NPCTurn();
+        CollorAllTiles(0);
     }
 
     public void EndEnemyTurn()
@@ -243,14 +240,15 @@ public class GameManager : MonoBehaviour
         {
             fire.SetActive(true);
         }
-        playerShipText.text = playerShipCount.ToString();
-        topText.text = "Lanza el misil";
-        playerTurn = true;
-        CollorAllTiles(1);
+        
         if (enemyShipCount < 1)
         {
             SceneManager.LoadScene("Ganar");
         }
+        playerShipText.text = playerShipCount.ToString();
+        topText.text = "Lanza el misil";
+        playerTurn = true;
+        CollorAllTiles(1);
     }
 
     private void CollorAllTiles(int colorIndex)
