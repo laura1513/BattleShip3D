@@ -22,6 +22,8 @@ public class EnemyMissileScript : MonoBehaviour
         }
         else
         {
+            gameManager.EnemyMissed(targetTileLocation, targetTile);
+            Debug.Log("Enemy missed");
             enemyIAScript.PauseAndEnd(targetTile);
         }
         Destroy(gameObject);

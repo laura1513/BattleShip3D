@@ -2893,12 +2893,11 @@ MonoBehaviour:
   barcoOut: {fileID: 194432789}
   playerShipText: {fileID: 48116625}
   enemyShipText: {fileID: 863401353}
-  panelGanar: {fileID: 1077648873}
-  panelPerder: {fileID: 101867996}
   missilePrefab: {fileID: 434759423491039371, guid: 858823b126895bd48b691f70e6f2d6bc, type: 3}
   enemyMissilePrefab: {fileID: 1089542326795025627, guid: 13ed61875f6833e4ea4865ed2e797523, type: 3}
   puerto: {fileID: 1458530991}
   firePrefab: {fileID: 3279921436806093977, guid: d6930896cc1cbc840bd3bd6ae89b4a6f, type: 3}
+  waterPrefab: {fileID: 7496350265465711756, guid: 7e84779056290da4dafec887f236081a, type: 3}
 --- !u!4 &522426059
 Transform:
   m_ObjectHideFlags: 0
