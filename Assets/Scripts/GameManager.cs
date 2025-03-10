@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 nextBtn.gameObject.SetActive(false);
+                rotarBtn.gameObject.SetActive(false);
                 puerto.SetActive(false);
                 barcoOut.gameObject.SetActive(false);
                 topText.text = "Lanza la bomba";
