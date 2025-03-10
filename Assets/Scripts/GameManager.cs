@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
         {
             // se lanza un misil
             Vector3 tilePos = tile.transform.position;
-            tilePos.y += 200;
+            tilePos.y += 15;
             playerTurn = false;
             Instantiate(missilePrefab, tilePos, missilePrefab.transform.rotation);
         }

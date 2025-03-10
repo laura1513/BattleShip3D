@@ -86,9 +86,15 @@ public class EnemyIAScript : MonoBehaviour
         if (hitIndex.Count > 1)
         {
             int diff = hitIndex[1] - hitIndex[0];
-            int posNeg = Random.Range(0, 2) * 2 - 1;
+            Debug.Log("Diff: " + diff);
+            //int posNeg = Random.Range(0, 2) * 2 - 1;
             int nextIndex = hitIndex[0] + diff;
-            // Verificar que el siguiente tile no esté ocupado
+            if (nextIndex > 99 || nextIndex < 0)
+            {
+                diff *= -1;
+                nextIndex = hitIndex[0] + diff;
+            }
+            Debug.Log("NextIndex: " + nextIndex);
             while (guessGrid[nextIndex] != 'o')
             {
                 if (guessGrid[nextIndex] == 'm' || nextIndex > 100 || nextIndex < 0)
@@ -109,7 +115,6 @@ public class EnemyIAScript : MonoBehaviour
             closeTiles.Add(10);
 
             int index = Random.Range(0, closeTiles.Count);
-            Debug.Log("Index: " + index);
             int possibleGuess = hitIndex[0] + closeTiles[index];
             //Verificar que el posible tiro no se salga del tablero
             bool onGrid = possibleGuess > -1 && possibleGuess < 100;
