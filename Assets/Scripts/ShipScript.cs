@@ -16,6 +16,9 @@ public class ShipScript : MonoBehaviour
     List<GameObject> touchTiles = new List<GameObject>();
     List<Color> allColors = new List<Color>();
 
+    private List<GameObject> playerWater = new List<GameObject>();
+    public GameObject waterPrefab;
+
     private void Start()
     {
         // Guardar los colores de los materiales del barco
@@ -31,6 +34,7 @@ public class ShipScript : MonoBehaviour
         // Verificar si el objeto colisionado es un tile
         if (collision.gameObject.CompareTag("Tile"))
         {
+            playerWater.Add(Instantiate(waterPrefab, collision.gameObject.transform.position, Quaternion.identity));
             touchTiles.Add(collision.gameObject);
         }
     }

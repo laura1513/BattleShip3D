@@ -435,7 +435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -460, y: -237}
+  m_AnchoredPosition: {x: -444, y: -186}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &48116624
@@ -963,7 +963,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194432787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0015375576}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1176,6 +1176,10 @@ PrefabInstance:
       propertyPath: shipSize
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -2829677469651884491, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
+      propertyPath: waterPrefab
+      value: 
+      objectReference: {fileID: 7496350265465711756, guid: 7e84779056290da4dafec887f236081a, type: 3}
     - target: {fileID: 1873073648213521876, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
       propertyPath: m_Size.x
       value: 10.712458
@@ -2001,7 +2005,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: SIGUIENTE
 --- !u!222 &432890509
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2559,6 +2563,7 @@ MonoBehaviour:
   xOffset: 0
   zOffset: 5
   shipSize: 4
+  waterPrefab: {fileID: 7496350265465711756, guid: 7e84779056290da4dafec887f236081a, type: 3}
 --- !u!23 &486465098
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4897,7 +4902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -460, y: -335}
+  m_AnchoredPosition: {x: -444, y: -284}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &863401353
@@ -4954,6 +4959,10 @@ PrefabInstance:
       propertyPath: shipSize
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -2829677469651884491, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
+      propertyPath: waterPrefab
+      value: 
+      objectReference: {fileID: 7496350265465711756, guid: 7e84779056290da4dafec887f236081a, type: 3}
     - target: {fileID: 1873073648213521876, guid: 990c2013bd7ded74aa195059d408244f, type: 3}
       propertyPath: m_Size.x
       value: 10.744657
@@ -5409,7 +5418,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879469438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5853,6 +5862,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5934,6 +5944,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 70.609, y: 0, z: 0}
+--- !u!82 &963194229
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 09198d6f5b9e0194586cadc169538b51, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &976147049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7088,7 +7194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: 465.0002}
+  m_AnchoredPosition: {x: 133, y: 437}
   m_SizeDelta: {x: 120, y: -960.0004}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1299081440
@@ -7959,6 +8065,10 @@ PrefabInstance:
       propertyPath: shipSize
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4345389213420983074, guid: fa1ee6283c0235f469eb5d32767064ca, type: 3}
+      propertyPath: waterPrefab
+      value: 
+      objectReference: {fileID: 7496350265465711756, guid: 7e84779056290da4dafec887f236081a, type: 3}
     - target: {fileID: 9042909197280033732, guid: fa1ee6283c0235f469eb5d32767064ca, type: 3}
       propertyPath: m_IsKinematic
       value: 0
@@ -8422,7 +8532,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -658, y: -237}
+  m_AnchoredPosition: {x: -697, y: -193}
   m_SizeDelta: {x: 400, y: 70}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1530221465
@@ -8466,7 +8576,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ships Player 1
+  m_Text: Barcos Jugador 1
 --- !u!1001 &1546034437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8649,7 +8759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -658, y: -335}
+  m_AnchoredPosition: {x: -696.9995, y: -291}
   m_SizeDelta: {x: 400, y: 70}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1556469071
@@ -8685,7 +8795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ships Player 2
+  m_Text: Barcos Jugador 2
 --- !u!222 &1556469072
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10011,7 +10121,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Place your ships
+  m_Text: Coloca los barcos
 --- !u!222 &1812224608
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10784,6 +10894,7 @@ MonoBehaviour:
   xOffset: 0
   zOffset: 0
   shipSize: 5
+  waterPrefab: {fileID: 7496350265465711756, guid: 7e84779056290da4dafec887f236081a, type: 3}
 --- !u!23 &1947531503
 MeshRenderer:
   m_ObjectHideFlags: 0
