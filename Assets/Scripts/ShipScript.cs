@@ -34,7 +34,6 @@ public class ShipScript : MonoBehaviour
         // Verificar si el objeto colisionado es un tile
         if (collision.gameObject.CompareTag("Tile"))
         {
-            playerWater.Add(Instantiate(waterPrefab, collision.gameObject.transform.position, Quaternion.identity));
             touchTiles.Add(collision.gameObject);
         }
     }
