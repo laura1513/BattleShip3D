@@ -228,7 +228,6 @@ public class GameManager : MonoBehaviour
         
         if (playerShipCount < 1)
         {
-
             SceneManager.LoadScene("Perder");
         }
         enemyShipText.text = enemyShipCount.ToString();
