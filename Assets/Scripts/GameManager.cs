@@ -47,6 +47,11 @@ public class GameManager : MonoBehaviour
 
     private List<int> numeros = Enumerable.Range(0, 100).ToList();
 
+    //Añadir sonidos de agua o explosion al impactar
+    public AudioSource audioSource;
+    public AudioClip waterSound;
+    public AudioClip explosionSound;
+
     public float delay = 1f;
 
     // Start is called before the first frame update
@@ -165,14 +170,18 @@ public class GameManager : MonoBehaviour
                 // Verificar si el barco está hundido
                 if (hitCount == tileNumArray.Length)
                 {
+                    //Añadir sonido de explosion
+                    Sonidos(explosionSound);
                     enemyShipCount--;
                     topText.text = "Hundido";
                     enemyFires.Add(Instantiate(firePrefab, tile.transform.position, Quaternion.identity));
                     tile.GetComponent<TileScript>().SetTileColor(1, new Color32(68, 0, 0, 225));
                     tile.GetComponent<TileScript>().SwitchColors(1);
+
                 }
                 else
                 {
+                    Sonidos(explosionSound);
                     topText.text = "Tocado";
                     enemyFires.Add(Instantiate(firePrefab, tile.transform.position, Quaternion.identity));
                     tile.GetComponent<TileScript>().SetTileColor(1, new Color32(225, 0, 0, 225));
@@ -185,6 +194,7 @@ public class GameManager : MonoBehaviour
         // Si no hubo impactos
         if (hitCount == 0)
         {
+            Sonidos(waterSound);
             topText.text = "Agua";
             tile.GetComponent<TileScript>().SetTileColor(1, new Color32(255, 255, 0, 0));
             tile.GetComponent<TileScript>().SwitchColors(1);
@@ -287,5 +297,11 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void Sonidos(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 }
