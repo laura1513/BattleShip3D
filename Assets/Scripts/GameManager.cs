@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -45,7 +46,9 @@ public class GameManager : MonoBehaviour
     private List<GameObject> enemyWater = new List<GameObject>();
 
     private List<int> numeros = Enumerable.Range(0, 100).ToList();
-    
+
+    public float delay = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -228,7 +231,7 @@ public class GameManager : MonoBehaviour
         
         if (playerShipCount < 1)
         {
-            SceneManager.LoadScene("Perder");
+            StartCoroutine(CambiarEscenaConRetraso("Perder"));
         }
         enemyShipText.text = enemyShipCount.ToString();
         topText.text = "Turno del enemigo";
@@ -253,7 +256,7 @@ public class GameManager : MonoBehaviour
         
         if (enemyShipCount < 1)
         {
-            SceneManager.LoadScene("Ganar");
+            StartCoroutine(CambiarEscenaConRetraso("Ganar"));
         }
         playerShipText.text = playerShipCount.ToString();
         topText.text = "Lanza el misil";
@@ -277,6 +280,12 @@ public class GameManager : MonoBehaviour
 
     void Reanudar()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        StartCoroutine(CambiarEscenaConRetraso("Juego"));
+    }
+
+    IEnumerator CambiarEscenaConRetraso(string sceneName)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
     }
 }
