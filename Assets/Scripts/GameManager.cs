@@ -125,6 +125,7 @@ public class GameManager : MonoBehaviour
     private void PlaceShip(GameObject tile)
     {
         // se coloca un barco en la casilla
+        Sonidos(waterSound);
         shipScript = ships[shipIndex].GetComponent<ShipScript>();
         shipScript.ClearTileList();
         Vector3 newVec = shipScript.GetOffsetVec(tile.transform.position);
